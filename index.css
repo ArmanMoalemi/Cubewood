@@ -1,0 +1,187 @@
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    background:white;
+}
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    -webkit-user-drag: none;
+    font-family:spectral;
+}
+img {
+    vertical-align: middle;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+
+.navbar-dark {
+    background:#16697A;
+    padding:21px 36px;
+    position:relative;
+}
+.btn {
+    background:#0000;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    vertical-align: middle;
+    position:relative;
+}
+.nd-phone, .nd-email {
+    font-family:spectral;
+    font-size:14px;
+    color:white;
+}
+.nd-phone:is(:focus, :hover), .nd-email:is(:focus, :hover) {
+    text-decoration:underline 1px white;
+}
+.nd-email {
+    margin-left:30px;
+}
+.nd-header {
+    display: inline-block;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:14px;
+    font-weight: 700;
+    color:white;
+}
+.nd-container-1 {
+    float:right;
+    display:flex;
+    gap:15px;
+}
+.nd-social-container {
+    display:flex;
+    gap:16px;
+}
+.dn-social-text {
+    color:white;
+    font-size:14px;
+}
+.btn.socials {
+    transition:transform 0.2s ease-in-out;
+}
+.btn.socials:is(:hover, :focus) {
+    transform:scale(1.2);
+}
+
+.navbar-light {
+    display:flex;
+    flex-direction: row;
+    padding:21px 36px;
+    align-items:center;
+    gap:100px;
+}
+.comp-name {
+    font-size:26px;
+    color:#252B42;
+    font-weight:700;
+}
+.nav-link-1 {
+    display:flex;
+    gap:22px;
+}
+.nav-link-2 {
+    display:flex;
+    gap:30px;
+    margin-left:auto;
+}
+.nl-button-1 {
+    color:#737373;
+    font-size:14px;
+}
+.nl-button-1::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-bottom:2px solid rgb(82, 165, 197);
+
+    transform:scaleX(0);
+    transform-origin:right;
+
+    transition:transform 0.15s ease-in-out;
+}
+.nl-button-1:is(:hover, :focus)::before {
+    transform:scaleX(1);
+    transform-origin:left;
+}
+.nl-button-2 {
+    color:rgba(255, 166, 43, 1);
+    font-size:12px;
+}
+.nl-button-2:first-child {
+    font-size:14px;
+    font-weight:700;
+}
+.nl-button-2:first-child::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-bottom:2px solid rgb(250, 203, 139);
+
+    transform:scaleX(0);
+    transform-origin:right;
+
+    transition:transform 0.15s ease-in-out;
+}
+.nl-button-2:first-child:is(:focus, :hover)::before {
+    transform:scaleX(0.85);
+}
+.background-img {
+    width:100%;
+    position:relative;
+    height:80vh;
+}
+.content-1 {
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-70%);
+    width:1260px;
+}
+.season-name {
+    font-size:17px;
+    color:white;
+}
+.c1-header {
+    font-size:80px;
+    font-weight:700;
+    color:white;
+    width:41%;
+    margin:21px 0 21px 0;
+}
+.c1-description {
+    font-size:20px;
+    color:white;
+    margin-bottom:21px;
+    width:25.5%;
+}
+.btn.c1-read-more {
+    font-size:14px;
+    font-weight:700;
+    color:white;
+    padding:15px 36px;
+    border:1px solid white;
+    border-radius:30px;
+
+    transition:border 0.05s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.btn.c1-read-more:is(:hover, :focus) {
+    box-shadow:inset 200px 0 0 0 rgb(57, 149, 191);
+    border:1px solid rgb(57, 149, 191);
+    color:white;
+}
