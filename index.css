@@ -148,10 +148,10 @@ a {
 }
 .content-1 {
     position:absolute;
-    top:70%;
-    left:50%;
+    top:74%;
+    left:30%;
     transform:translate(-50%,-70%);
-    width:1260px;
+    width:500px;
 }
 .season-name {
     font-size:17px;
@@ -168,7 +168,7 @@ a {
     font-size:20px;
     color:white;
     margin-bottom:21px;
-    width:25.5%;
+    width:65%;
 }
 .btn.c1-read-more {
     font-size:14px;
