@@ -189,6 +189,8 @@ a {
 .main-container {
     display:flex;
     justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
 .main-content {
     width:1260px;
@@ -620,4 +622,102 @@ iframe {
     width:1260px;
     height:460px;
     border:1px solid rgb(168, 116, 33);
+}
+
+.contact-container-2 {
+    display:flex;
+    align-items:center;
+    padding:40px 0;
+}
+.cc2-header {
+    font-size:26px;
+    font-weight:700;
+    color:rgba(37, 43, 66, 1);
+}
+.cc2-description {
+    font-size:16px;
+    color:rgba(115, 115, 115, 1);
+    margin-top:10px;
+}
+.cc2-button-container {
+    margin-left:auto;
+}
+.btn.contact-us {
+    padding:14px 40px;
+    color:white;
+    background:rgba(255, 166, 43, 1);
+    border-radius:5px;
+    font-size:14px;
+    font-family:Montserrat;
+    font-weight:700;
+
+    transition:transform 0.3s ease-in-out;
+}
+.btn.contact-us:is(:hover, :focus) {
+    transform:translateX(-4px);
+}
+
+.footer {
+    width:100%;
+    padding:50px 0;
+    background:rgba(37, 43, 66, 1);
+    display:flex;
+    justify-content: center;    
+}
+.foot-container {
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+}
+.fc-box {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    width:20%;
+}
+.fc-header {
+    font-family:Montserrat;
+    margin-bottom:10px;
+    font-size:16px;
+    font-weight:700;
+    color:white;
+}
+.btn.fc-button {
+    font-size:14px;
+    color:white;
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.btn.fc-button:is(:focus, :hover) {
+    text-decoration: underline 1px white;
+}
+.fc-text-box {
+    text-align: left;
+}
+
+.bottom-footer-container {
+    padding:25px 0;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bfc-text {
+    font-size:14px;
+    font-weight:700;
+    color:rgba(115, 115, 115, 1);
+    font-family:Montserrat;
+}
+.bfc-social-container {
+    margin-left:auto;
+    display:flex;
+    gap:20px;
+}
+.btn.social-btn {
+    transition:transform 0.2s ease-in-out;
+}
+.btn.social-btn:is(:hover, :focus) {
+    transform:scale(1.1);
 }
